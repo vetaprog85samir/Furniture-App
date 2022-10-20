@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="margin_st_end">
+        <item name="android:layout_marginStart">@dimen/dim_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_16dp</item>
+    </style>
+
+    <style name="margin_16dp">
+        <item name="android:layout_marginTop">@dimen/dim_16dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_16dp</item>
+
+    </style>
+
+    <style name="input_layout">
+
+        <item name="android:background">@drawable/shape_rounded_corners_rect</item>
+        <item name="android:textColor">@color/black_100</item>
+        <item name="android:drawablePadding">@dimen/_8sdp</item>
+        <item name="android:textColorHint">#3A3A3A</item>
+        <item name="android:layout_marginTop">@dimen/_4sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_4sdp</item>
+        <item name="android:layout_marginStart">@dimen/_8sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_8sdp</item>
+        <item name="android:padding">@dimen/_4sdp</item>
+
+    </style>
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/white_100</item>
+        <item name="itemBackground">@drawable/bottom_nav_item_background</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/bg_spinner</item>
+    </style>
+
+</resources>

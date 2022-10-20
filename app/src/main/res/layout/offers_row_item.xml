@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/offers_row_item_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/rounded_corners_bordered_rect"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/offers_row_item_iv"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_margin="@dimen/_20sdp"
+                tools:srcCompat="@drawable/chair" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/offers_row_item_offer_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="انتريه مودرن"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/offers_row_item_product1_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/offers_row_item_product1_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="كنبه" />
+
+                    <TextView
+                        android:id="@+id/offers_row_item_product1_no_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="2" />
+
+                    <ImageView
+                        android:id="@+id/offers_row_item_product1_iv"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:src="@drawable/ic_baseline_chair" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/offers_row_item_product2_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/offers_row_item_product2_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="كنبه" />
+
+                    <TextView
+                        android:id="@+id/offers_row_item_product2_no_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="2" />
+
+
+                    <ImageView
+                        android:id="@+id/offers_row_item_product2_iv"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:src="@drawable/ic_baseline_chair" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/offers_row_item_product3_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/offers_row_item_product3_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="كنبه" />
+
+                    <TextView
+                        android:id="@+id/offers_row_item_product3_no_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:text="2" />
+
+                    <ImageView
+                        android:id="@+id/offers_row_item_product3_iv"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:src="@drawable/ic_baseline_chair" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/offers_row_item_furn_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_3sdp">
+
+                    <TextView
+                        android:id="@+id/offers_row_item_furn_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:text="ارت هاوس"
+                        android:textSize="@dimen/_12ssp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/offers_row_item_furn_cv"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:elevation="0dp"
+                        app:cardCornerRadius="@dimen/_15sdp">
+
+                        <ImageView
+                            android:id="@+id/offers_row_item_furn_iv"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/flash_sale2_2x" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/offers_row_item_offer_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"
+                        android:text="200 جنيه"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="سعر العرض" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/offers_row_item_order_now_ll"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@id/offers_row_item_ll"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="-35dp"
+            android:background="@drawable/shap_circl_rect_grey"
+            android:orientation="horizontal"
+            android:padding="@dimen/_7sdp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/order_now"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/white"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_outline_shopping_bag_white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

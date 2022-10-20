@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/activity_home_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.views.activities.HomeActivity">
+
+
+        <FrameLayout
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/activity_home_bottom_nav_bar"
+            android:layout_below="@id/activity_home_rl_top" />
+
+        <LinearLayout
+            android:layout_margin="@dimen/_15sdp"
+            android:id="@+id/activity_home_rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_50dp"
+            android:background="#ffff"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/giftbox2"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:src="@drawable/ic_outline_camera_grey"/>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/shape_rounded_corners_rect">
+
+                <ImageView
+                    android:id="@+id/activity_home_search_iv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/password_hide_iv"
+                    android:src="@drawable/ic_tune_grey"
+                    android:scaleType="centerCrop"/>
+
+                <EditText
+                    android:textDirection="anyRtl"
+                    android:id="@+id/activity_home_search_et"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:hint="@string/search_furniture"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#989797"
+                    android:textSize="@dimen/_15sdp" />
+
+                <ImageView
+                    android:id="@+id/fragment_login_password_hide_iv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/password_hide_iv"
+                    android:src="@drawable/ic_search_grey"
+                    android:scaleType="centerCrop"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/activity_home_bottom_nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_5sdp"
+            app:itemIconSize="@dimen/_30sdp"
+            app:itemBackground="@drawable/bottom_nav_item_background"
+            app:itemIconTint="@color/light_grey"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/activity_home_bottom_navigation" />
+
+
+    </RelativeLayout>
+
+    <data>
+
+    </data>
+</layout>
